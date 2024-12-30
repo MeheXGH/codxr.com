@@ -81,8 +81,8 @@ ScrollTrigger.matchMedia({
         trigger: ".page1 h2",
         scroller: ".main",
         // markers: true,
-        start: "bottom 20%",
-        end: "bottom 0%",
+        start: "bottom 25%",
+        end: "bottom 5%",
         scrub: 3
       }
     });
@@ -146,8 +146,8 @@ var tl3 = gsap.timeline({
       trigger: ".page1 h1",
       scroller: ".main",
       // markers: true,
-      start: "top -420%",
-      end: "top -425",
+      start: "top -421%",
+      end: "top -426",
       scrub: 3
   }
 });

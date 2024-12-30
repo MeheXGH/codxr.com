@@ -60,7 +60,8 @@ nav{
     
 }
 .logo img{
-    height: 70px;
+    height: 80px;
+    padding: 10px 0 10px 0 ;
     
 }
 .login{
@@ -231,7 +232,7 @@ nav{
 }
 .work-con{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 5vw;
@@ -243,8 +244,8 @@ nav{
     
 }
 .video1 video{
-    height: 50vh;
-    width: 80vh;
+    height: 30vw;
+    width: 40vw;
     object-fit: cover;
     border: solid 1px #000000;
     border-radius: 15px 15px 0 0;
@@ -634,7 +635,21 @@ footer h5{
 }
 
 @media screen and (max-width:767px) {
+
+    nav{
+        padding: 0 1vh ;
+    }
    
+    .logo img{
+        height: 50px;
+        padding: 5px 0 5px 0 ;
+        
+    }
+    .login img{
+        height: 30px;
+        
+    }
+    
     .page1{
         min-height:50vh;
         overflow: hidden;
@@ -644,7 +659,7 @@ footer h5{
     }
     .main-txt{
         
-        padding: 15vh 7vh 5vh 7vh;
+        padding: 10vh 7vh 5vh 7vh;
         
        
     }
@@ -726,9 +741,11 @@ footer h5{
         align-items: center;
         justify-content: center;
     }
-    .page3 video{
+    .video1 video{
         height: 50vw;
         width: 80vw;
+        border-radius: 10px 10px 0 0;
+
     }
     /* .work-text{
         padding-bottom: 5vh;
