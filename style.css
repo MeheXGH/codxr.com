@@ -144,18 +144,21 @@ nav{
 
 }
 .page2{
-    min-height: 120vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0 10vh;
     /* background-color: white; */
     color: #0F0D0D;
     position: relative;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 
 }
 .p2-text{
-    /* height: 100vh; */
+    width:100%;
     display: flex;
     /* align-items: center; */
     /* justify-content: space-between; */
@@ -296,7 +299,7 @@ nav{
     position: relative;
     z-index: 10;
     color: #ffffff;
-    padding: 30vh 10vh ;
+    padding: 15vh 10vh ;
     /* margin-top: 20vh; */
     border-bottom: 1px solid white;
     
@@ -317,6 +320,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     gap: 2vw;
+    padding-bottom: 5vh;
 }
 
 .srvcard{
@@ -332,18 +336,27 @@ nav{
 
 
 .srvtop{
-    background: #6f6f6f;
+    background: #ffffff;
     width: 38vw;
     height: 20vw;
     border-radius: 15px;
     margin: 1vw ;
+    margin-top: 3vw;
     overflow: hidden;
+    /* border: solid 1px #000000; */
 }
 
 .srvtop video{
     height: 20vw;
     width: 38vw;
     object-fit: cover;
+}
+
+.srvtop img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* filter: invert(); */
 }
 
 .srvbtm{
@@ -522,7 +535,7 @@ nav{
 }
 
 footer{
-    height: 105vh;
+    min-height: 100vh;
     background-color: #ffffff;
     padding: 0 10vh ;
     color: #0F0D0D;
@@ -800,7 +813,7 @@ footer h5{
     .srvtop{
         width: 72vw;
         height: 38vw;
-        margin-top: 2vw ;
+        margin-top: 3.5vw ;
         border-radius: 10px;
 
 
@@ -814,6 +827,8 @@ footer h5{
     .srvbtm{
         height: 12vw;
         width: 72vw;
+        margin-bottom: 3.5vw ;
+
         
     
     }
