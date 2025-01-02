@@ -8,6 +8,10 @@
     box-sizing: border-box;
     font-family: avs;
     /* background-color: #0F0D0D; */
+    a{
+        text-decoration: none;
+        color: black;
+    }
 
 }
 html , body{
@@ -535,117 +539,112 @@ nav{
 }
 
 footer{
-    min-height: 100vh;
+    max-height: 50vh;
     background-color: #ffffff;
     padding: 0 10vh ;
     color: #0F0D0D;
 }
-.f-top{
-    height: 45vh;
-    width: 100%;
-    /* background-color: antiquewhite; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #0F0D0D;
-    flex-wrap: wrap;
+
+.f-con{
+    height: 50vh;
 
 }
-.top-text h1{
-    font-size: 2.5vw;
+.f-top{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
 }
-.get-in{
-    height: 25vh;
-    width: 25vh;
-    border-radius: 50%;
+.f-logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-
+    height: 30vh;
+    /* background-color: #ff9500; */
+    overflow: hidden;
 }
-.get-in:hover {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+.f-logo h4{
+    font-size: 15vw;
+    font-weight: 600;
 }
-
-.f-down{
-    height: 50vh;
-    width: 100%;
-    /* background-color: rgb(255, 145, 0); */
+.f-txt{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-}
-.down-left{
-    height: 40%;
-    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    cursor: pointer;
 }
-.mail-con{
+.f-txt h5{
+    font-size: 1.2vw;
+    font-weight: 200;
+    transition: all .5s ease-out;
+
+}
+.f-txt span{
+    font-size: 1vw;
+    font-weight: 200;
+    color: #000000;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.f-txt h5:hover{
+    text-decoration: underline black;
+
+    span{
+        opacity: 100%;
+    }
+}
+
+.f-mid{
+    height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 60vh;
-    border-bottom:1px solid #0F0D0D ;
-    padding: 2vh 0;
-
-}
-.mail-con input{
-    background-color: transparent;
-    border: none;
-    padding: 1vh 1vh;
-    width: 100%;
-    font-size: 2.5vh;
-    outline: none;
-    
+    justify-content:flex-start
 }
 
-.mail-con a{
-    padding: 1vh 2vh;
-    border-radius: 3vh;
-    border: 1px solid #0F0D0D;
-    text-decoration: none;
-    color: #0F0D0D;
-}
-
-.down-right{
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.socil-con{
+.sm-icon{
+    height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.f-down h3{
-    font-size: 3vh;
+    justify-content: center;
+    padding: 1vh;
 }
 
-footer h5{
-    font-size: 2vh;
-    font-weight: 400;
-    padding: 2px 0;
+.sm-icon img{
+    height: 3.5vh;
 }
 
-
-.copyright{
+.f-btm{
     height: 5vh;
-    width: 100%;
-    /* background-color: rgb(111, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
 }
-.copyright h6{
-    font-size: 2vh;
+
+.f-btm img{
+    height: 2vh;
+}
+.f-btm h5{
+    font-size: 1vw;
     font-weight: 200;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:767px) {
 
@@ -918,58 +917,41 @@ footer h5{
         font-size: 2vw;
         font-weight: 100;
     }
-
     footer{
-        height: auto;
-        padding: 0 5vh ;
-
-    }
-    .top-text{
-        padding-top: 6vh;
-
-    }
-    .top-text h1{
-        font-size: 3.5vw;
-    }
-    .mail-con{
-        width: auto;
-    }
-    .mail-con input{
-        font-size: 2vh;
-    }
-    .mail-con a{
-        padding: .5vh 1vh;
-        font-size: 2vh;
+        padding: 0 5vh!important; ;
     }
     .f-top{
-        height: 30vh;
-    justify-content: center;
-
-    }
-    .get-in{
-        height: 15vh;
-        width: 15vh;
-    }
-    foo
-    .f-down h3{
-        font-size: 2vh;
-    }
-    .socil-con h4{
-        font-size: 2vh;
-
-    }
-    .f-down{
+        flex-direction: column;
+        align-items:center;
         justify-content: center;
     }
-    footer h5{
-        font-size: 1.2vh;
-        font-weight: 400;
-        padding: 2px 0;
+    .f-logo{
+        padding-bottom: 5vh;
+    }
+    .f-logo h4{
+        font-size: 10vw;
+        font-weight: 600;
+    }
+    .f-txt{
+        align-items:center;
+        justify-content: center;
+    }
+    .f-txt h5{
+        font-size: 4vw;
+        font-weight: 200;
+    }
+    .f-txt span{
+        font-size: 4vw;
+    }
+    .f-mid{
+        justify-content:center
     }
     
-    .copyright h6{
-        text-align: center;
-        font-size: 1.2vh;
+    .f-btm{
+        gap: 1vw;
+    }
+    .f-btm h5{
+        font-size: 3vw;
         font-weight: 200;
     }
 }
