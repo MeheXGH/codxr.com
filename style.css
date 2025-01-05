@@ -17,11 +17,12 @@
 html , body{
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 .cur{
     height: 15px;
     width: 15px;
-    background-color: #EDBFFF;
+    background-color: #ff8400;
     mix-blend-mode: difference;
     border-radius: 50%;
     position: fixed;
@@ -76,7 +77,7 @@ nav{
 }
 .login img{
     height: 100%;
-    
+    opacity: 0;
 }
 .more{
     
@@ -85,15 +86,27 @@ nav{
     justify-content: space-between;
     gap:10px;
 }
-.more h4{
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
+.more a{
+    font-weight: 200;
+    color: white;
 
 }
-.more h4:nth-child(1){
-    border-bottom: 1.5px solid white;
+.more h4{
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-out 0.5s;
 }
+.more a:hover h4{
+    color: #ff8400;
+    border-bottom: 1.5px solid #ff8400;
+}
+.more a.active h4 {
+    color: #ff8400;
+    border-bottom: 1.5px solid #ff8400;
+  }
 .circle{
     height: 17px;
     width: 17px;
@@ -208,6 +221,8 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    transition: all ease-out 0.5s;
+
 }
 .abut-btn a{
     text-decoration: none;
@@ -217,7 +232,7 @@ nav{
 }
 
 .abut-btn:hover{
-    background-color: #515151;
+    background-color: #ff8400;
 }
 .page3{
     min-height: 100vh;
@@ -247,7 +262,9 @@ nav{
 }
 
 .video1{
-    
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
     
 }
 .video1 video{
@@ -260,8 +277,9 @@ nav{
 
 
 .work-text{
+    /* height: 6vw; */
     text-align: right;
-    padding-bottom: 5vh;
+    padding:1vw 0; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -279,6 +297,10 @@ nav{
     justify-content: center;
     text-align: center;
     border: 1px solid #ffffff;
+    transition: all ease-out 0.5s;
+}
+.visit-btn:hover{
+    background-color: #ff8400;
 }
 .visit-btn a{
     color: #ffffff;
@@ -298,11 +320,12 @@ nav{
 }
 
 .more_work{
-    height: 4vw;
+    height: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .more_work h4{
     color: #ffffff;
     height: 2.5vw;
@@ -315,6 +338,11 @@ nav{
     justify-content: center;
     border-radius: 25px;
     border: solid .5px #ffffff;
+    transition: all ease-out 0.5s;
+
+}
+.more_work h4:hover{
+    background-color: #ff8400;
 }
 .page4{
     min-height:100vh;
@@ -420,6 +448,11 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all ease-out 0.5s;
+
+}
+.srvbtn:hover{
+    background-color: #ff8400;
 }
 .srvbtn img{
    
@@ -516,14 +549,26 @@ nav{
     position: relative;
     z-index: 10;
     color: #ffffff;
-    padding: 5vh 10vh 0 10vh;
+    padding: 5vh 10vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5vw;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
     
 }
+.p4-text h2{
+    margin-bottom: 4vw ;
 
+    font-size: 6vw;
+    font-weight: 400;
+    text-align: left;
+}
+.form-con{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .contact-form {
     background-color: #000000;
     padding: 20px;
@@ -576,7 +621,7 @@ nav{
 }
 
 .contact-form button:hover {
-    background-color: #444;
+    background-color: #ff8400;
     color: #fff;
 }
 
@@ -601,7 +646,7 @@ nav{
     height: 70vh;
     width: 70vh;
     object-fit: cover;
-    filter: hue-rotate(180deg);
+    /* filter: hue-rotate(180deg); */
 }
 
 
@@ -693,10 +738,13 @@ footer{
 }
 
 .f-txt h5:hover{
-    text-decoration: underline black;
+    text-decoration: underline #ff8400;
+    color: #ff8400;
 
     span{
         opacity: 100%;
+        color: #ff8400;
+
     }
 }
 
@@ -763,6 +811,7 @@ footer{
     }
     .login img{
         height: 30px;
+        opacity: 100;
         
     }
     

@@ -1,3 +1,28 @@
+// Get the current page path
+const currentPath = window.location.pathname;
+
+// Loop through all navigation links
+document.querySelectorAll('.nav-link').forEach(link => {
+  // Check if the link's href matches the current path
+  if (link.getAttribute('href') === currentPath) {
+    link.classList.add('active');
+  }
+});
+
+
+if (window.location.hash) {
+  // Delay execution to allow the page to load before scrolling
+  setTimeout(() => {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+      }
+  }, 500); // Adjust delay as needed
+}
+
+
+
+
 function loco(){
     gsap.registerPlugin(ScrollTrigger);
 
