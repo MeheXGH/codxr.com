@@ -1,0 +1,149 @@
+html , body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.work-p1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    color: #ffffff;
+    padding: 5vh 10vh;
+    
+}
+.work-con{
+    width: 100vw;
+    background-color: burlywood;
+}
+.p4-text h2{
+    margin-bottom: 4vw ;
+
+    font-size: 6vw;
+    font-weight: 400;
+    text-align: left;
+}
+
+.p5-img{
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #EDBFFF; */
+    padding: 5vh 0;
+}
+
+.p5-img img{
+    height: 70vh;
+    width: 70vh;
+    object-fit: cover;
+    /* filter: hue-rotate(180deg); */
+}
+
+
+.work-heding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px  solid white;
+    padding: 10vh 0;
+
+}
+
+.work-heding h1{
+    font-size: 7vw;
+    text-decoration: underline;
+    text-decoration-thickness: 1px ;
+    text-underline-offset: 10px;
+}
+.clint span{
+    color: #EDBFFF;
+}
+.view-client{
+    border-radius: 2vh;
+    padding:1vh ;
+    border: 1px solid #ffffff;
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    border-bottom: 1px  solid white;
+    
+}
+.work-p1 h4{
+    font-size: 1.4vw;
+    /* letter-spacing:1px ; */
+}
+
+.work-p1 h5{
+    font-size: 1.2vw;
+    font-weight: 200;
+    
+    color: #ff8400;
+}
+.box img{
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .work-p1{
+        padding: 5vh 5vh;
+    }
+    .work-heding{
+        padding: 5vh 0;
+        border: none;
+    }
+    .work-heding h1{
+    }
+    .p5-img{
+        height: 50vh;
+        width: 50vh;
+    }
+    .p5-img img{
+        /* height: 100vh;
+        width: 100vh; */
+        opacity: 0;
+    }
+    .work-p1 h4{
+        padding: 1vh 0 0 1vh ;
+        font-size: 5vw;
+        background-color: #0000006a;  
+        width: 100%;
+    }
+    .work-p1 h5{
+        padding: 0 0 1vh 1vh ;
+        background-color: #0000006a;
+        font-size: 4vw;
+        width: 100%;
+
+
+    }
+   
+    .box{
+        position: relative;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+    }
+    .box img{
+        position: absolute;
+        height: 25vh;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        z-index: -10;
+        border-radius: 5px  5px 0 0;
+         display: block;
+
+    }
+}
