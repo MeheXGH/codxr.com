@@ -10,6 +10,40 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loginBtn = document.querySelector(".login");
+  const closeBtn = document.querySelector(".close");
+  const sideMenu = document.querySelector(".sid-menu");
+  const body = document.body;
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  function closeMenu() {
+    sideMenu.classList.remove("open");
+    body.style.overflow = "auto"; // Enable scrolling
+  }
+
+  loginBtn.addEventListener("click", function () {
+    sideMenu.classList.add("open");
+    body.style.overflow = "hidden"; // Stop scrolling
+  });
+
+  closeBtn.addEventListener("click", closeMenu);
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+});
+
+
+
+
+
+
+
+
+
+
 if (window.location.hash) {
   // Delay execution to allow the page to load before scrolling
   setTimeout(() => {

@@ -114,6 +114,57 @@ nav{
     background-color: rgb(255, 255, 255);
     
 }
+.sid-menu{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    /* opacity: 80%; */
+    transform: translateX(+100%);
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+
+}
+
+.sid-menu.open {
+    transform: translateX(0);
+  }
+.sid-links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh ;
+}
+.close{
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    height: 5vh;
+    width: 5vh;
+    cursor: pointer;
+    filter: invert();
+}
+.close img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.sid-links h4{
+    width: 45vw;
+    font-size: 10vw;
+    text-align: start;
+    font-weight: 200;
+    color: #000000;
+    cursor: pointer;
+    transition: all ease-out 0.5s;
+}
 
 .page1{
     min-height: 100vh;
@@ -225,7 +276,7 @@ nav{
     transition: all ease-out 0.5s;
 
 }
-.abut-btn a{
+.abut-btn p{
     text-decoration: none;
     color: #ffffff;
     
