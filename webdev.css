@@ -224,6 +224,10 @@ footer a {
 
 
 .addons-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 4vh 8vw;
     background-color: #ffffff00;
@@ -247,7 +251,7 @@ footer a {
   }
   
   .addon {
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    background-color: #fff4eb;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -259,8 +263,10 @@ footer a {
   }
   
   .addon:hover {
+    background-color:#ffead4 ;
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    
   }
   
   .addon h3 {
