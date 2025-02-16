@@ -353,7 +353,7 @@ nav{
 .visit-btn:hover{
     background-color: #ff8400;
 }
-.visit-btn a{
+.visit-btn p{
     color: #ffffff;
     font-size: 2.5vh;
     font-weight: 200;
@@ -881,6 +881,9 @@ footer{
        
     }
     .more{
+        display: none;
+    }
+    .cur{
         display: none;
     }
     .main-txt h1{

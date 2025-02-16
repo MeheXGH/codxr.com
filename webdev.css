@@ -50,12 +50,15 @@ a {
     transition: all 0.4s ease-in-out;
     position: relative;
 }
-
-.plan:hover {
-    transform: scale(1.06);
-    border-color: #ffffffcc;
-    background: linear-gradient(180deg, rgba(78, 78, 78, 0.98) 0%, rgba(50, 50, 50, 0.96) 40%, rgba(0, 0, 0, 0.94) 100%);
+@media screen and (min-width: 767px){
+    .plan:hover {
+        transform: scale(1.06);
+        border-color: #ffffffcc;
+        background: linear-gradient(180deg, rgba(78, 78, 78, 0.98) 0%, rgba(50, 50, 50, 0.96) 40%, rgba(0, 0, 0, 0.94) 100%);
+    }  
 }
+
+
 
 .plan h2 {
     font-size: 2vw;
@@ -90,6 +93,7 @@ a {
     font-weight: 500;
     transition: all 0.5s, color 0.3s;
 }
+
 
 .btn:hover {
     background: #ff8400;
@@ -191,7 +195,8 @@ footer a {
     }
 
     .plan {
-        padding: 5vh 3vw;
+        
+        padding: 10vh 5vw;
     }
 
     .plan h2 {
