@@ -739,6 +739,22 @@ nav{
     font-weight: 400;
 }
 
+
+.wp-img{
+    position: fixed;
+    bottom: 2vh;
+    right: 2.5vh;
+    padding: 1vh;
+    height: 8vh;
+    width: auto;
+    background-color: #fff;
+    border-radius: 2vh;
+    filter: drop-shadow(0 0 .55px #000000);
+    z-index: 99;
+}
+
+
+
 footer{
     max-height: 50vh;
     background-color: #ffffff;
@@ -1147,6 +1163,13 @@ footer{
     .p5-img{
         display: none;
     }
+
+    .wp-img{
+       
+        height: 6vh;
+        
+    }
+
     footer{
         padding: 0 5vh!important; 
     }

@@ -88,9 +88,13 @@ a{
     font-weight: 200;
     
     color: #ff8400;
+    /* mix-blend-mode: difference; */
 }
 .box img{
     display: none;
+}
+.f-txt h5{
+    color: #000;
 }
 
 @media screen and (max-width:767px) {
